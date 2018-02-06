@@ -1,0 +1,130 @@
+@import "../vendor/bootstrap/less/bootstrap";
+
+@icon-font-path: "../fonts/";
+
+body {
+  padding-top: 50px;
+}
+
+.footer a {
+  color: @text-muted;
+}
+
+#shifts {
+  td {
+    &.free {
+      border: 1px solid @brand-danger;
+      .bg-danger();
+    }
+    &.occupied {
+      border: 1px solid @brand-success;
+      .bg-success();
+    }
+    &.collides {
+      border: 1px solid @brand-warning;
+      .bg-warning();
+    }
+    &.own {
+      border: 1px solid @gray-light;
+    }
+  }
+}
+
+.row-day {
+  border-top: 2px solid @gray-light;
+}
+
+.row-header {
+  min-width: 90px;
+}
+
+.space-top {
+  margin-top: 15px;
+}
+
+.messages {
+  &:focus {
+    outline: none;
+  }
+  a:focus {
+    outline: none;
+  }
+}
+
+.messages span.text-danger {
+  animation: pulse 1s infinite;
+  -webkit-animation: pulse 1s infinite;
+  -moz-animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+     transform: rotate(0deg);
+  }
+  10% {
+     transform: rotate(5deg) translateY(-2px);
+  }
+  20% {
+     transform: rotate(-5deg);
+  }
+    30% {
+     transform: rotate(5deg) translateY(-2px);;
+  }
+    40% {
+     transform: rotate(-5deg);
+  }
+    50% {
+     transform: rotate(0deg) translateY(-2px);
+  }
+  75% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+     transform: rotate(0deg);
+  }
+  10% {
+     transform: rotate(5deg) translateY(-2px);
+  }
+  20% {
+     transform: rotate(-5deg);
+  }
+    30% {
+     transform: rotate(5deg) translateY(-2px);
+  }
+    40% {
+     transform: rotate(-5deg);
+  }
+    50% {
+     transform: rotate(0deg) translateY(-2px);
+  }
+  75% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+     transform: rotate(0deg);
+  }
+  10% {
+     transform: rotate(5deg) translateY(-2px);
+  }
+  20% {
+     transform: rotate(-5deg);
+  }
+    30% {
+     transform: rotate(5deg) translateY(-2px);
+  }
+    40% {
+     transform: rotate(-5deg);
+  }
+    50% {
+     transform: rotate(0deg) translateY(-2px);
+  }
+  75% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
