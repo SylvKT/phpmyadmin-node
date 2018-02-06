@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 phpmyadmin/
+web: /app/vendor/bin/heroku-php-apache2 phpmyadmin/
